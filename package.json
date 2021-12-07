@@ -2,6 +2,7 @@
   "name": "honeypot-sniper",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/honeypot-sniper/",
   "dependencies": {
     "@apollo/react-hooks": "^4.0.0",
     "@craco/craco": "^6.4.2",

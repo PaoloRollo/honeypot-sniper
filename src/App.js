@@ -30,13 +30,13 @@ function App() {
   }
 
   useEffect(() => {
-    if (window.ethereum) setupApp()
+    setupApp()
   }, []);
 
   const setupApp = async () => {
     setLoading(true);
     try {
-      const metamaskWeb3 = new Web3(window.ethereum);
+      const metamaskWeb3 = new Web3('https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161');
       const blockNumber = await metamaskWeb3.eth.getBlockNumber();
       const gProvider = window.Ganache.provider({
         db: window.MemDOWN(),
@@ -61,13 +61,17 @@ function App() {
     }
   }
 
-  if (!window.ethereum) {
-    return (
-      <div className="h-screen w-screen flex flex-col justify-center items-center px-4">
-        <h1 className="text-3xl text-center mb-8 font-bold animate-bounce">🦊 Please install Metamask!</h1>
-        <p className="text-sm text-center mb-8 font-medium">Metamask is used to retrieve the latest block, no transactions will be ever prompted to you.</p>
-      </div>
-    )
+  {
+    /*
+    if (!window.ethereum) {
+      return (
+        <div className="h-screen w-screen flex flex-col justify-center items-center px-4">
+          <h1 className="text-3xl text-center mb-8 font-bold animate-bounce">🦊 Please install Metamask!</h1>
+          <p className="text-sm text-center mb-8 font-medium">Metamask is used to retrieve the latest block, no transactions will be ever prompted to you.</p>
+        </div>
+      )
+    }
+    */
   }
 
   if (loading) {

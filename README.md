@@ -25,10 +25,10 @@ This project is currently available for **Ethereum Mainnet** only. Feel free to 
 Available:
 - [x] UniswapV2 support
 - [x] UniswapV3 support
+- [x] Sushiswap support
 - [x] ETH pairs/pools
 
 Coming soon:
-- [ ] Sushiswap support
 - [ ] USDC pairs/pools
 - [ ] USDT pairs/pools
 

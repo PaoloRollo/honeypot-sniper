@@ -199,12 +199,12 @@ const SushiswapSniper = ({ web3 }) => {
                                     </div>
                                     <div className="-ml-px w-0 flex-1 flex">
                                         <a
-                                        href={`https://v2.info.uniswap.org/pair/${pair.id}`}
+                                        href={`https://analytics.sushi.com/pairs/${pair.id}`}
                                         target="_blank"
                                         className="cursor-pointer relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500"
                                         >
                                             <LinkIcon className="w-5 h-5 text-gray-400" aria-hidden="true" />
-                                            <span className="ml-3">Uniswap</span>
+                                            <span className="ml-3">Sushiswap</span>
                                         </a>
                                     </div>
                                     </div>
